@@ -32,7 +32,7 @@ watch(
           <NuxtLink :to="m.sourceUrl"
             class="aspect-square group block transition-transform duration-150 active:scale-[0.99]">
             <div
-              class="flex items-center justify-center overflow-hidden p-8 h-full bg-white/80 rounded border border-white">
+              class="flex items-center justify-center overflow-hidden p-8 h-full bg-white/10 rounded border-gray-800">
               <img :src="`/images/${m.coverUrl}`"
                 class="max-w-full max-h-full w-auto h-auto object-contain saturate-[.8] rounded shadow-sm group-hover:scale-[1.03] duration-300"
                 :alt="m.title" width="400" loading="lazy" />
@@ -40,16 +40,16 @@ watch(
           </NuxtLink>
           <div class="mt-2">
             <a :href="m.sourceUrl"
-              class="text-gray-800 hover:text-gray-500 duration-300 leading-snug decoration-1 underline underline-offset-2">{{
+              class="text-gray-50 hover:text-gray-300 duration-300 leading-snug decoration-1 underline underline-offset-2">{{
                 m.title }}</a>
-            <div class="text-gray-600 leading-snug">{{ m.company }}</div>
+            <div class="text-gray-400 leading-snug">{{ m.company }}</div>
           </div>
         </li>
       </ul>
     </main>
     <nav class="mx-auto text-center my-24">
       <NuxtLink v-for="p in totalPages" :key="p" :to="{ query: { page: p } }" :class="{ active: p === page }"
-        class="md:text-xl text-lg py-2 px-4 m-1 bg-white rounded text-gray-800">
+        class="md:text-xl text-lg py-2 px-4 m-1 bg-white/10 hover:bg-white/30 duration-300 rounded text-gray-100">
         {{ p }}
       </NuxtLink>
     </nav>
@@ -59,7 +59,7 @@ watch(
 
 <style>
 body {
-  @apply bg-gray-100
+  @apply bg-gray-950
 }
 
 h1 {
