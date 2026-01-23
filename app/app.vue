@@ -42,7 +42,7 @@ watch(
             <a :href="m.sourceUrl"
               class="text-gray-800 hover:text-gray-500 duration-300 leading-snug decoration-1 underline underline-offset-2">{{
                 m.title }}</a>
-            <div class="text-gray-500 leading-snug">{{ m.company }}</div>
+            <div class="text-gray-600 leading-snug">{{ m.company }}</div>
           </div>
         </li>
       </ul>
