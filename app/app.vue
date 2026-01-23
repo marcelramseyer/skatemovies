@@ -1,6 +1,22 @@
 <script setup>
 import movies from '~/assets/data/skatemovies.json'
 
+useHead({
+  htmlAttrs: {
+    lang: 'en'
+  }
+})
+
+useSeoMeta({
+  title: 'Skate Video Classics',
+  description: 'A handpicked collection of legendary skate videos.',
+  ogTitle: 'Skate Video Classics',
+  ogDescription: 'A handpicked collection of legendary skate videos.',
+  ogType: 'website',
+  ogImage: '/images/og-image.jpg',
+  twitterCard: 'summary_large_image'
+})
+
 const route = useRoute()
 
 const perPage = 20
@@ -34,7 +50,7 @@ watch(
             <div
               class="flex items-center justify-center overflow-hidden p-8 h-full bg-white/10 rounded border-gray-800">
               <img :src="`/images/${m.coverUrl}`"
-                class="max-w-full max-h-full w-auto h-auto object-contain saturate-[.8] rounded shadow-sm group-hover:scale-[1.03] duration-300"
+                class="max-w-full max-h-full w-auto h-auto object-contain saturate-[.8] rounded group-hover:scale-[1.03] duration-300"
                 :alt="m.title" width="400" loading="lazy" />
             </div>
           </NuxtLink>

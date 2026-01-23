@@ -3,7 +3,7 @@
         <p class="text-center text-7xl mb-3 text-gray-50">❈</p>
         <h1 class="text-gray-50 text-center">Skate Video Classics</h1>
         <div class="text-gray-400 md:text-xl text-lg text-center mt-4">A handpicked collection of legendary skate
-            videos
+            videos,
             <br>
             full-length & free to watch
         </div>
