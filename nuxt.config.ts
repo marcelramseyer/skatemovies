@@ -3,8 +3,5 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   modules: ['@nuxt/fonts', '@nuxt/image', '@nuxtjs/tailwindcss'],
-  ssr: false,
-  nitro: {
-    preset: 'cloudflare-pages'
-  }
+  ssr: false
 })

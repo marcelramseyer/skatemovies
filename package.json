@@ -2,9 +2,6 @@
   "name": "skatemovies-app",
   "type": "module",
   "private": true,
-  "engines": {
-    "node": ">=18"
-  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
