@@ -1,11 +1,10 @@
 <template>
-    <header class="md:text-7xl text-5xl p-6 py-8 border-stone-800 my-8 mx-auto max-w-3xl">
-        <p class="text-center text-8xl mb-3 text-gray-50">※</p>
-        <h1 class="text-gray-50 text-center">Skate Video Classics</h1>
-        <div class="text-gray-400 md:text-xl text-lg text-center mt-4">A handpicked collection of legendary skate
-            videos,
+    <header class="md:text-7xl text-5xl p-6 py-8 border-stone-800 my-16 mx-auto max-w-3xl">
+        <h1 class="text-zinc-50 text-center">Skate Video Classics</h1>
+        <div class="text-zinc-400 md:text-xl text-lg text-center mt-6">A collection of legendary skate
+            videos from past decades,
             <br>
-            full-length & free to watch
+            watch them online for free!
         </div>
     </header>
 </template>
